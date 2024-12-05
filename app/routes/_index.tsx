@@ -24,13 +24,14 @@ export const links: LinksFunction = () => [
 
 export default function Index() {
   return (
-    <>
-      <h1>Home index page</h1>
-      {/* This working fine but rise some problem */}
-      {/* <a href="/demo">Go to demo page</a> */}
-      <Link to="/demo">Go to demo page</Link>
+     <main id="content">
+      <h1>A better way of keeeping of your notes</h1>
+      <p>Try your better and never loose track of your notes again</p>
+       <p id="cta">
+        <Link to="/notes">Try it now</Link>
+       </p>
 
-    </>
+     </main>
 
   );
 }

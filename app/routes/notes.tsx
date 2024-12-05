@@ -1,7 +1,20 @@
+import NewNote from "~/components/newNote"
+import NewNoteStyles from '~/components/NewNote.css'
+import type { LinksFunction } from "@remix-run/node";
+
 export default function NotesPage(){
   return (
     <main>
-        <h1>My notes</h1>
+        <NewNote/>
     </main>
   )
 }
+
+export const links: LinksFunction = () => [
+  
+  {
+    rel:"stylesheet",
+    href:NewNoteStyles
+  }
+ 
+];
